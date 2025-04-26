@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.bot-collection, .bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bot-card {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.bot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bot-specs {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button.danger {
+  background-color: #e53935;
+}
+
+button.danger:hover {
+  background-color: #c62828;
+}
+
+.sort-bar, .filter-bar {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 6px;
+  width: 60%;
+  display: block;
+  margin: 10px auto;
+  border: none;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  background-color: #444;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+}
